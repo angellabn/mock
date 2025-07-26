@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employer Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: lightslategray;
+      font-family: 'Playfair Display', serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .top {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-control{
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2 class="top">Employer Login</h2>
+    <form action="employer.html" >
+      <input type="email" name="email" class="form-control" placeholder="Email" required />
+      <input type="password" name="password" class="form-control" placeholder="Password" required />
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

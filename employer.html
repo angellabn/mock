@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employer Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Questrial', serif;
+        }
+
+        .dashboard {
+            font-size: 30px;
+            font-family: 'Questrial';
+            margin-top: 200;
+        }
+
+        .title {
+            margin-top: 34px;
+            font-size: 30px;
+            margin-bottom: 16px;
+            padding: 7px;
+        }
+
+        .postint {
+            width: 541px;
+            margin-top: 40px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-left: 25px;
+        }
+
+        .description {
+            height: 100px;
+        }
+
+        .row1 {
+            margin-left: 50px;
+            gap: 24px;
+        }
+
+        .element1 {
+            margin-top: 39px;
+            width: 50%;
+        }
+
+        .num1 {
+            margin-top: -16px;
+            margin-left: 104px;
+            margin-bottom: 10px;
+        }
+        .num2 {
+            margin-top: -16px;
+            margin-left: 104px;
+            margin-bottom: 20px;
+        } 
+         .num3 {
+            margin-top: -16px;
+            margin-left: 104px;
+            margin-bottom: 20px;
+        }
+        .pics{
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ChatGPT Image Jul 24, 2025, 09_35_07 PM.png" alt="Logo" width="47" height="39"
+                    class="d-inline-block align-text-top">
+                IMP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="components">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="mock1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studentlogin.html">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employerlogin.html">Employers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adminlogin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- dashboard -->
+    <div class="dashboard" style="margin-top: 20px;" style="margin-left: 15px;">
+        <b>Employer Dashboard</b>
+    </div>
+
+    <!-- NEW INTERNSIP -->
+    <div class="row1" style="display: flex;">
+        <div class="postint">
+            <h1 class="title">Post a New Internship</h1><br>
+            <div class="factors">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Internship Title</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Description</label>
+                    <input type="text" class="form-control description" id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Duration</label>
+                    <input type="text" class="form-control " id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Location</label>
+                    <input type="text" class="form-control " id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Requirements</label>
+                    <input type="text" class="form-control description" id="formGroupExampleInput2">
+                </div>
+            </div>
+
+        </div>
+        <!-- emplyer profile -->
+        <div class="element1">
+
+            <div class="card text-bg-light mb-3 box1">
+                <div class="card">
+                    <h5 class="card-header">Employer Profile</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Company Name:</b> TechCorp Inc.</h5>
+                        <p class="card-text"><b>Industry:</b> Infornamtion Technology</p>
+                        <p><b>Location:</b> Mumbai, Maharashtra</p>
+                        <a href="employerprofile.html" class="btn btn-primary">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-bg-light mb-3 box1">
+                <div class="card">
+                    <h5 class="card-header">Dashboard</h5>
+                    <div class="card-body">
+
+                        <img src="suitcase.png" width="47" height="39">Active Internships <div class="num1"> <b>2</b></div>
+                            <div class="card-body"></div>
+                        <img src="group.png" width="47" height="39" class="pics">Total Applicants <div class="num2"> <b>3</b></div>
+                            <div class="card-body"></div>
+                        <img src="wirte.png" width="47" height="39" class="pics">Pending Reviews <div class="num3"> <b>1</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

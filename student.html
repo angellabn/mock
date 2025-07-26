@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Questrial', serif;
+        }
+
+        .dashboard {
+            font-size: 30px;
+            font-family: 'Questrial';
+            margin-top: 200;
+        }
+
+        .search-container {
+            width: 60%;
+            /* or 90% */
+            margin-top: 40px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-left: 25px;
+        }
+         /* .flex{
+            display: flex;
+            flex-direction: right;
+         } */
+
+
+        /* .search-container h4 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        } */
+
+        .search-box {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+
+        }
+        
+
+        .internship{
+            width: 80%;
+            margin-top: 60px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- LOGO -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ChatGPT Image Jul 24, 2025, 09_35_07 PM.png" alt="Logo" width="47" height="39"
+                    class="d-inline-block align-text-top">
+                IMP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="components">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="mock1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employerlogin.html">Employers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adminlogin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- dashboard -->
+    <div class="dashboard" style="margin-top: 20px;">
+        <b>Student Dashboard</b>
+    </div>
+
+    <!-- search -->
+<div class="d-flex justify-content-between align-items-start px-4 mt-4">
+
+    <div class="search-container">
+        <h4>Internship Search</h4>
+        <input type="text" placeholder="Search internships..." class="search-box">
+    </div>
+
+    <!-- profile -->
+    
+     <div class="card" >
+  <h5 class="card-header">Your Profile</h5>
+  <div class="card-body">
+    <h5 class="card-title">Email: johndoe@ims.com</h5>
+    <p class="card-text">Branch: Infornamtion Technology</p>
+    <p>Semester 5</p>
+    <a href="studentprofile.html" class="btn btn-primary">Edit Profile</a>
+  </div>
+</div>
+</div>
+
+    <!-- internship opportunities -->
+    <div class="internship">
+        <div class="card border-dark mb-3" >
+            <div class="card-header">Internship Listings</div>
+            <div class="card-body">
+                <h5 class="card-title">Software Engineering Intern</h5>
+                <h7 class="card-text">TechCorp.Inc</h7><br>
+                <p>Mumbai,Maharashtra•3 Months</p>
+                    <button>Apply Now</button>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Data Science Intern</h5>
+                <h7 class="card-text">Analytics Pro</h7>
+                <p>Pune,Maharashtra•6 Months</p>
+                    <button>Apply Now</button>
+                    
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">AI Research Intern</h5>
+                <h7 class="card-text">DeepVision Labs</h7>
+                <p class="card-text">Bengaluru, Karnataka • 3 Months</p>
+                    <button>Apply Now</button>
+                    
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Web Development Intern</h5>
+                <h7 class="card-text">CodeCraft</h7>
+                <p class="card-text">Mumbai, Maharashtra • 4 Months</p>
+                    <button>Apply Now</button>
+                    
+            </div>
+        </div>
+
+    </div>
+
+    <!-- status -->
+     <div class="container mt-5">
+  <h4>My Application Status</h4>
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Internship Role</th>
+        <th scope="col">Company</th>
+        <th scope="col">Location</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Data Science Intern</td>
+        <td>Analytics Pro</td>
+        <td>Pune</td>
+        <td>6 Months</td>
+        <td><span class="badge bg-warning text-dark">Pending</span></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Frontend Developer Intern</td>
+        <td>PixelWorx</td>
+        <td>Remote</td>
+        <td>4 Months</td>
+        <td><span class="badge bg-success">Accepted</span></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>AI Research Intern</td>
+        <td>NeuroNet AI</td>
+        <td>Bangalore</td>
+        <td>3 Months</td>
+        <td><span class="badge bg-danger">Rejected</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Questrial', serif;
+
+        }
+
+        .dashboard {
+            font-size: 30px;
+            font-family: 'Questrial';
+            margin-top: 24px;
+            margin-left: 55px;
+        }
+
+        .button {
+            background-color: blueviolet;
+            border-color: blueviolet;
+            color: white;
+            width: 17%;
+        }
+
+        .buttons {
+            margin-left: 20px;
+            margin-top: 25px;
+            gap: 10px;
+            margin-left: 55px;
+        }
+
+        .users {
+            margin-left: 55px;
+            margin-top: 24px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- LOGO -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ChatGPT Image Jul 24, 2025, 09_35_07 PM.png" alt="Logo" width="47" height="39"
+                    class="d-inline-block align-text-top">
+                IMP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="components">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="mock1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studentlogin.html">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employerlogin.html">Employers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adminlogin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="dashboard"><b>Admin Dashboard</b></h1>
+    <!-- buttons -->
+    <div class="buttons d-flex gap-3">
+
+        <a href="admin.html.html" class="btn btn-primary button">Manage Users</a>
+        <a href="approvecompanies.html" class="btn btn-primary button">Approve Companies</a>
+        <a href="generatereports.html" class="btn btn-primary button">Generate Reports</a>
+        <!-- <a href="reviewinternships.html" class="btn btn-primary button">Review Internships</a> -->
+        
+
+    </div>
+
+    <!-- homepage -->
+    <div class="users">
+        <h4 class="title">Manage Users</h4>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2  " style="width: 700px;" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filter
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Students</a></li>
+                        <li><a class="dropdown-item" href="#">Employer</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- TABLE -->
+         <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Type</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Mark Otto</th>
+      <td>mark@example.com</td>
+      <td>Employer</td>
+      <td>Active</td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Jacob Thornton</th>
+      <td>jacob@example.com</td>
+      <td>Student</td>
+      <td>Inactive</td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Jane Austen</th>
+      <td>jane@example.com</td>
+      <td>Student</td>
+      <td>Active</td>
+      <td><input type="checkbox" /></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

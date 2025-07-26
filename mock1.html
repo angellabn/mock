@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightcoral;
+            font-family: 'Questrial', serif;
+        }
+
+        .start {
+            text-align: center;
+            margin: 25px;
+            margin-right: 80px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .start1 {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .components {
+            text-align: right;
+        }
+
+        .start2 {
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+            margin-top: 13px;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        @media screen and (min-width: 780px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        .card {
+            width: 250px;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        .a {
+            display: inline-block;
+            font-size: 16px;
+            /* Bigger button text */
+            padding: 10px 20px;
+            /* Bigger buttons */
+
+        }
+
+        .b {
+            display: inline-block;
+            font-size: 16px;
+            /* Bigger button text */
+            padding: 10px 20px;
+            /* Bigger buttons */
+        }
+
+        .c {
+            display: inline-block;
+            font-size: 16px;
+            /* Bigger button text */
+            padding: 10px 20px;
+            /* Bigger buttons */
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            /* 🔥 even space around each card */
+            align-items: center;
+            gap: 20px;
+            /* spacing between cards */
+            padding: 40px;
+            max-width: 900px;
+            /* keeps layout tight & centered */
+            margin: 0 auto;
+            /* centers the whole box */
+            text-align: center;
+            flex-wrap: wrap;
+
+        }
+
+        .card-header{
+            color: #333;
+            font-size: 25px;
+        }
+
+        .card img {
+            width: 100%;
+            /* Make the image fill the card */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .chooseus {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .reason {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+
+        /* .aa{
+            display: flex;
+        }
+
+        .bb{
+            display: flex;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGO -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ChatGPT Image Jul 24, 2025, 09_35_07 PM.png" alt="Logo" width="47" height="39"
+                    class="d-inline-block align-text-top">
+                IMP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="components">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studentlogin.html">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employerlogin.html">Employers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adminlogin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="start">
+        <b>
+            <h2 class="start1">Welcome to Internship Management Portal!</h2>
+        </b>
+        <h5 class="start2">A centralized platform for managing internships between students, colleges, and companies.
+        </h5>
+    </div>
+
+    <!-- PAGEHOLDERS -->
+    <div class="box">
+        <div class="stud">
+            <div class="card a">
+                <img src="pngtree-student-glyph-black-icon-png-image_691145.jpg" class="card-img-top" alt="..."
+                    height="155px" width="156px">
+
+                <div class="card-body aa">
+                    <a href="studentlogin.html" class="btn btn-primary">Student Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card b" aria-hidden="true">
+            <img src="employer.png" class="card-img-top cs" alt="..." height="155px" width="156px">
+            <div class="card-body aa">
+                <a href="employerlogin.html" class="btn btn-primary">Employer Login</a>
+            </div>
+        </div>
+        <!-- <h5 class="card-title placeholder-glow"> -->
+        <div class="card c" aria-hidden="true">
+            <img src="admin.jpeg" class="card-img-top" alt="..." height="155px" width="156px">
+            <div class="card-body aa">
+                <a href="adminlogin.html" class="btn btn-primary">Admin Login</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a> -->
+    </div>
+    </div>
+
+    <!-- WHY US -->
+    <div class="chooseus">
+        <b>
+            <h2>Why Choose IMS?</h2>
+        </b>
+    </div>
+
+    <div class="reason">
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Quality Opportunities</div>
+            <div class="card-body">
+                
+                <p class="card-text">A high-quality internship on the portal provides meaningful, practical work experience relevant to a student's field, fostering career development and skill enhancement. </p>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Skill Development</div>
+            <div class="card-body">
+                
+                <p class="card-text">An internship management portal facilitates skill development by providing a structured platform for interns to acquire and enhance practical skills through hands-on experience and mentorship, ultimately improving their employability. </p>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Networking</div>
+            <div class="card-body">
+                
+                <p class="card-text">The internship management portal facilitates networking by connecting students with potential employers and mentors, fostering valuable professional relationships. </p>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Career Guidance</div>
+            <div class="card-body">
+                
+                <p class="card-text">An internship management portal can facilitate career guidance by connecting students with relevant opportunities, providing resources for skill development, and offering insights into career paths based on their interests and performance. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
