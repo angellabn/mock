@@ -7,13 +7,13 @@
         font-family: Arial, sans-serif;
         text-align: center;
         margin-top: 60px;
-        background: #f0f8ff;
+        background: linear-gradient(to right, #f0f8ff, #dff6ff);
     }
     h1 {
         color: #333;
     }
     #counter {
-        font-size: 48px;
+        font-size: 60px;
         font-weight: bold;
         margin: 20px;
         color: #0077b6;
@@ -25,7 +25,10 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        transition: background 0.2s;
+        transition: transform 0.1s ease-in-out, background 0.2s;
+    }
+    button:hover {
+        transform: scale(1.05);
     }
     #clickBtn {
         background: #4CAF50;
@@ -68,8 +71,10 @@
     }
 
     document.getElementById("decreaseBtn").onclick = function() {
-        count--;
-        counterDisplay.textContent = count;
+        if (count > 0) { // prevents negative numbers
+            count--;
+            counterDisplay.textContent = count;
+        }
     }
 
     document.getElementById("resetBtn").onclick = function() {
