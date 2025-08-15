@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click Counter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 60px;
+        background: #f0f8ff;
+    }
+    h1 {
+        color: #333;
+    }
+    #counter {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 20px;
+        color: #0077b6;
+    }
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+        margin: 5px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    #clickBtn {
+        background: #4CAF50;
+        color: white;
+    }
+    #clickBtn:hover {
+        background: #45a049;
+    }
+    #decreaseBtn {
+        background: #ff9800;
+        color: white;
+    }
+    #decreaseBtn:hover {
+        background: #e68a00;
+    }
+    #resetBtn {
+        background: #f44336;
+        color: white;
+    }
+    #resetBtn:hover {
+        background: #d32f2f;
+    }
+</style>
+</head>
+<body>
+
+<h1>Click Counter</h1>
+<p id="counter">0</p>
+<button id="clickBtn">Increase</button>
+<button id="decreaseBtn">Decrease</button>
+<button id="resetBtn">Reset</button>
+
+<script>
+    let count = 0;
+    const counterDisplay = document.getElementById("counter");
+
+    document.getElementById("clickBtn").onclick = function() {
+        count++;
+        counterDisplay.textContent = count;
+    }
+
+    document.getElementById("decreaseBtn").onclick = function() {
+        count--;
+        counterDisplay.textContent = count;
+    }
+
+    document.getElementById("resetBtn").onclick = function() {
+        count = 0;
+        counterDisplay.textContent = count;
+    }
+</script>
+
+</body>
+</html>
